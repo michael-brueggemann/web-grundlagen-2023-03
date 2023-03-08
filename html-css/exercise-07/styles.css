@@ -1,0 +1,22 @@
+.gray_box {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  margin: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pizza_preview_image {
+  height: 140px;
+  width: 140px;
+}
