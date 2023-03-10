@@ -26,6 +26,10 @@ slides/*.pptx
 #html-css/exercise-*
 #javascript/*/solution
 
+# hide work stuff
+html-css/ü*
+javascript/ü*
+
 # hide html-css solutions:
 #html-css/exercise-03/
 #html-css/exercise-04/
@@ -49,14 +53,11 @@ slides/*.pptx
 #html-css/exercise-22/
 #html-css/exercise-23/
 
-# hide work stuff
-html-css/ü*
-
 # hide javascript solutions:
 #javascript/01*/solution
 #javascript/02*/solution
 #javascript/03*/solution
-javascript/04*/solution
+#javascript/04*/solution
 javascript/05*/solution
 javascript/05*/solution-1
 javascript/05*/solution-2
