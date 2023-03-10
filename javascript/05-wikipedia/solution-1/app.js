@@ -1,3 +1,7 @@
+document
+  .getElementById("searchButton")
+  .addEventListener("click", searchClickHandler);
+
 function searchClickHandler() {
   const searchTerm = document.getElementById("searchInput").value;
   search(searchTerm);
@@ -19,7 +23,6 @@ function processResult(searchResult) {
   document.querySelector("#resultSearchTerm").innerHTML = searchResult[0];
 
   const wordList = searchResult[1];
-  const linkList = searchResult[3];
 
   let result = "";
 
@@ -32,12 +35,7 @@ function processResult(searchResult) {
 
   // output in raw format
   result += "<pre>" + JSON.stringify(searchResult[1], " ", 2) + "</pre>";
-  result += "<pre>" + JSON.stringify(searchResult[3], " ", 2) + "</pre>";
 
   const outputElement = document.querySelector("#result");
   outputElement.innerHTML = result;
 }
-
-document
-  .getElementById("searchButton")
-  .addEventListener("click", searchClickHandler);
